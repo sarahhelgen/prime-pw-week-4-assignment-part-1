@@ -95,8 +95,8 @@ let value2 = 2;
 
 function find( value, array ){
   console.log( 'in find function', value, array);
-  for( i=0; i<array.length; i++){
-    if(array[i] === value){
+  for( let i=0; i<array.length; i++){
+    if(value === array[i]){
       return true;
     }//end value match
     else{
@@ -105,8 +105,8 @@ function find( value, array ){
   }//end for loop
 }//end find
 
-console.log('running find', find( value1, thisArray));
-console.log('running find', find( value2 , thisArray));
+console.log('running find', find(value1, thisArray));
+console.log('running find', find(value2 , thisArray));
 
 // ----------------------
 // Stretch Goals
