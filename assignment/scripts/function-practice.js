@@ -31,8 +31,8 @@ function addNumbers( firstNumber, secondNumber ) {
   // return firstNumber + secondNumber;
 }//end addNumbers
 
-console.log('in addNumbers adding 4 & 5', addNumbers(4,5));
-console.log('in addNumbers adding 45 and 8241', addNumbers(45, 8241));
+console.log('running addNumbers adding 4 & 5', addNumbers(4,5));
+console.log('running addNumbers adding 45 and 8241', addNumbers(45, 8241));
 
 
 
@@ -42,7 +42,7 @@ function multiplyThree( num1, num2, num3){
   let product = num1 * num2 * num3;
   return product;
 }//end multiplyThree
-console.log( 'in multiplyThree, multiplying 3,4, & 5', multiplyThree( 3,4,5));
+console.log( 'running multiplyThree, multiplying 3,4, & 5', multiplyThree( 3,4,5));
 
 
 // 5. Function that will return true if a number is positive, 
@@ -72,16 +72,41 @@ console.log( 'isPositive - should say false', isPositive(-3) );
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
-function getLast( array ) {
 
-}
+let array1 = [];
+let array2 = [ 3, 4, 10, 39 ];
+
+function getLast( array ) {
+  console.log( 'in getLast', array );
+  let lastItem = array.pop();
+  return lastItem;
+}//end getLast
+
+console.log( 'running getLast - the last number is', getLast( array1 ));
+console.log( 'running getLast - the last number is', getLast( array2 ));
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
+
+let thisArray = [9, 54, 29, 33, 4];
+let value1 = 54;
+let value2 = 2;
+
 function find( value, array ){
-  
-}
+  console.log( 'in find function', value, array);
+  for( i=0; i<array.length; i++){
+    if(array[i] === value){
+      return true;
+    }//end value match
+    else{
+      return false;
+    }//end else
+  }//end for loop
+}//end find
+
+console.log('running find', find( value1, thisArray));
+console.log('running find', find( value2 , thisArray));
 
 // ----------------------
 // Stretch Goals
