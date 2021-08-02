@@ -7,7 +7,7 @@ console.log('***** Function Practice *****')
 // 1. Function to return 'Hello World!'
 function hello() {
   return 'Hello World!';
-}
+}// end hello
 // Call the function to test
 console.log('Test - should say "Hello World!"', hello());
 
@@ -18,31 +18,51 @@ function helloName( name ) {
   console.log( 'in helloName', name );
   let greeting = `Hello ${name}!`
   return greeting;
-}
+}//end helloName
 // Remember to call the function to test
 console.log( helloName('Sarah'));
 
 
 // 3. Function to add two numbers together & return the result
-function addNumbers( firstNumber ) {
+function addNumbers( firstNumber, secondNumber ) {
+    console.log( 'in addNumbers', firstNumber, secondNumber )
+    let sum = firstNumber + secondNumber;
+    return sum;
   // return firstNumber + secondNumber;
-}
+}//end addNumbers
+
+console.log('in addNumbers adding 4 & 5', addNumbers(4,5));
+console.log('in addNumbers adding 45 and 8241', addNumbers(45, 8241));
+
 
 
 // 4. Function to multiply three numbers & return the result
-function multiplyThree( ){
-
-}
+function multiplyThree( num1, num2, num3){
+  console.log('in multiplyThree', num1, num2, num3);
+  let product = num1 * num2 * num3;
+  return product;
+}//end multiplyThree
+console.log( 'in multiplyThree, multiplying 3,4, & 5', multiplyThree( 3,4,5));
 
 
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
 function isPositive( number ) {
+  console.log( 'in isPostive', number );
   if ( number > 0 ){
-    return;
-  }
-    return;
-}
+    return true;
+  }//end true check
+  else{
+    return false;
+  }//false  
+}//end isPositive
+
+console.log('running isPositive with 5 ', isPositive(5) );
+console.log('running isPositive with -8 ', isPositive(-8) );
+console.log('running isPositive with 0 ', isPositive(0) );
+
+
+
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
 console.log( 'isPositive - should say true', isPositive(3) );
