@@ -89,24 +89,19 @@ console.log( 'running getLast - the last number is', getLast( array2 ));
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 
-let thisArray = [9, 54, 29, 33, 4];
-let value1 = 54;
-let value2 = 2;
 
 function find( value, array ){
-  console.log( 'in find function', value, array);
-  for( let i=0; i<array.length; i++){
-    if(value === array[i]){
+  console.log('in find', value, array );
+  for(let i=0; i<array.length; i++){
+    if( array[i] === value ){
       return true;
-    }//end value match
-    else{
-      return false;
-    }//end else
+    }//end check
   }//end for loop
-}//end find
+  }//end find
 
-console.log('running find', find(value1, thisArray));
-console.log('running find', find(value2 , thisArray));
+
+console.log('running find with 3 and [4,5,3,2]', find( 3, [4,5,3,2] ));
+console.log('running find with 89 and [45,79, 22, 19023]', find( 89, [45, 79, 22, 19023]));
 
 // ----------------------
 // Stretch Goals
