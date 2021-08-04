@@ -109,8 +109,17 @@ console.log('running find with 89 and [45,79, 22, 19023]', find( 89, [45, 79, 22
 // 8. Function to check if a letter is the first letter in a 
 //    string. Return true if it is, and false otherwise
 function isFirstLetter(letter, string) {
-
-}
+  console.log('in isFirstLetter', letter, string );
+  let firstLetter = string.charAt(0);
+  console.log(firstLetter);
+  if(firstLetter == letter ){
+    return true;
+  }//end letter check
+  else{
+    return false;
+  }//end else
+  
+}//end isFirstLetter
 console.log( 'isFirstLetter - should say true', isFirstLetter('a', 'apple') );
 console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
 
