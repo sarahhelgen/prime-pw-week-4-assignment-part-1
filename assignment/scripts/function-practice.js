@@ -142,6 +142,21 @@ console.log('running sumAll with 5,6,7', sumAll([5,6,7]));
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
 
+let newArray = [];
+
+function findPositiveNumbers( array ){
+  console.log('in findPositiveNumbers', array );
+    for(let i=0; i<array.length; i++){
+      if(array[i] > 0){
+        array.push(array[i]) = newArray;
+      }//end for
+      return newArray;
+    }//end for loop
+}//end findPositiveNumbers
+
+console.log( 'running findPositiveNumbers with 0,5,-3,2', findPositiveNumbers([0, 5, -3, 2]))
+console.log(newArray);
+
 
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
