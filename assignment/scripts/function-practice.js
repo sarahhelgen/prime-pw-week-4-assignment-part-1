@@ -97,6 +97,7 @@ function find( value, array ){
       return true;
     }//end check
   }//end for loop
+    return false; //this needs to be outside the for loop to return because it means it didn't exist in the array
   }//end find
 
 
@@ -148,14 +149,16 @@ function findPositiveNumbers( array ){
   console.log('in findPositiveNumbers', array );
     for(let i=0; i<array.length; i++){
       if(array[i] > 0){
-        array.push(array[i]) = newArray;
+        newArray.push(array[i]) = newArray;
       }//end for
       return newArray;
     }//end for loop
 }//end findPositiveNumbers
 
-console.log( 'running findPositiveNumbers with 0,5,-3,2', findPositiveNumbers([0, 5, -3, 2]))
+console.log( 'running findPositiveNumbers with 0,5,-3,2', findPositiveNumbers([0, 5, -3, 2]));
 console.log(newArray);
+
+//argh!!! why is this one not working?
 
 
 
