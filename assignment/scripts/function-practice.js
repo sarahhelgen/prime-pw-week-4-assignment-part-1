@@ -165,3 +165,17 @@ console.log(newArray);
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
 //     here in a comment, write the function, and test it!
+
+//using this problem: https://edabit.com/challenge/8q54MKnRrm89pSLmW
+
+//Write a function that takes an integer minutes and converts it to seconds
+
+function convertToSeconds ( integer ){
+  console.log('in convertToSeconds', integer );
+  let conversion = integer * 60;
+  return conversion;
+}
+
+console.log( 'running convertToSeconds with 5', convertToSeconds(5));
+console.log( 'running convertToSeconds with 29', convertToSeconds(29));
+
